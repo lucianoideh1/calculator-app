@@ -44,4 +44,15 @@ $(document).ready(function(){
     $("#zero").click(function(){
         document.forms.display.value += 0;
     })
+    $("#equal").click(function(){
+        if(display.value == ""){
+            alert("Please enter any numbers to calculate!")
+        } else {
+            document.forms.display.value =
+            eval(document.forms.display.value);
+        }
+    })
+    $("#clear").click(function(){
+        document.forms.display.value = ""
+    })
 })
